@@ -17,9 +17,5 @@ app.controller('LoginCtrl', function($scope, $http) {
     });
 
 
-    $scope.logout = function() {
-        $http.delete("/proyecto1_banco_server/api/Session").success(function(result) {
-            alert("Se ha eliminado la sesion");
-        });
-    };
+    
 });

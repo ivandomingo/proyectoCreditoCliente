@@ -90,6 +90,7 @@
                                         <th class="table-header-repeat line-left"><a href="">CD</a></th>
                                         <th class="table-header-options line-left"><a href="">Balance</a></th>
                                         <th class="table-header-options line-left"><a href="">Cif</a></th>
+                                        <th class="table-header-options line-left"><a href="">Usuario</a></th>
                                         <th class="table-header-options line-left"><a href="">Options</a></th>
                                     </tr>
                                     <tr ng-repeat="cuentaBancaria in cuentasBancarias">
@@ -100,6 +101,7 @@
                                         <td>{{cuentaBancaria.dc}}</td>
                                         <td>{{cuentaBancaria.saldo}}</td>
                                         <td>{{cuentaBancaria.cif}}</td>
+                                        <td>{{cuentaBancaria.idUsuario}}</td>
                                         <td class="options-width">
                                             <a href="#/CuentasBancariasUpdate/{{cuentaBancaria.idCuentaBancaria}}" title="Edit" class="icon-1 info-tooltip"></a>
                                             <a href="#/CuentasBancariasDelete/{{cuentaBancaria.idCuentaBancaria}}" title="Delete" class="icon-2 info-tooltip"></a>
